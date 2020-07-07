@@ -3,8 +3,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-24T06:48:38.137Z",
-        "line": 3,
+        "start_timestamp": "2020-07-07T13:39:01.283Z",
+        "line": 5,
         "name": "Verify that place is added successfully using add place api",
         "description": "",
         "id": "place-validation;verify-that-place-is-added-successfully-using-add-place-api",
@@ -13,87 +13,22 @@
         "steps": [
           {
             "result": {
-              "duration": 1289476900,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Add a place payload",
-            "match": {
-              "location": "apiStepdef.add_a_place_payload()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1349335600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user calls AddPlaceAPI with post http request",
-            "match": {
-              "location": "apiStepdef.user_calls_AddPlaceAPI_with_post_http_request()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2942700,
+              "duration": 2168877500,
               "status": "passed"
             },
             "line": 6,
-            "name": "The Post API call got success with status code 200",
+            "name": "Add a place payload",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 47
-                }
-              ],
-              "location": "apiStepdef.the_API_call_got_success_with_status_code(Integer)"
+              "location": "apiStepdef.add_a_place_payload()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1682237900,
+              "duration": 4104042700,
               "status": "passed"
             },
             "line": 7,
-            "name": "Status in response body is OK",
-            "match": {
-              "location": "apiStepdef.status_in_response_body_is_OK()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-24T06:48:42.484Z",
-        "line": 9,
-        "name": "Verify that place is updated successfully using put place api",
-        "description": "",
-        "id": "place-validation;verify-that-place-is-updated-successfully-using-put-place-api",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 14085100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Add a place payload",
-            "match": {
-              "location": "apiStepdef.add_a_place_payload()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 261750800,
-              "status": "passed"
-            },
-            "line": 11,
             "name": "user calls AddPlaceAPI with post http request",
             "match": {
               "location": "apiStepdef.user_calls_AddPlaceAPI_with_post_http_request()"
@@ -102,182 +37,38 @@
           },
           {
             "result": {
-              "duration": 43300,
+              "duration": 9601000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "The Post API call got success with status code 200",
+            "line": 8,
+            "name": "API call got success with status code 200",
             "match": {
               "arguments": [
                 {
                   "val": "200",
-                  "offset": 47
+                  "offset": 38
                 }
               ],
-              "location": "apiStepdef.the_API_call_got_success_with_status_code(Integer)"
+              "location": "apiStepdef.api_call_got_success_with_status_code(Integer)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 32367400,
+              "duration": 2429296200,
               "status": "passed"
             },
-            "line": 13,
+            "line": 9,
             "name": "Status in response body is OK",
             "match": {
               "location": "apiStepdef.status_in_response_body_is_OK()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 351730000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user calls updatePlaceAPI with put http request",
-            "match": {
-              "location": "apiStepdef.user_calls_updatePlaceAPI_with_put_http_request()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 314500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The API put call got success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 46
-                }
-              ],
-              "location": "apiStepdef.the_API_put_call_got_success_with_status_code(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15267000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Status in response body is Address successfully updated",
-            "match": {
-              "location": "apiStepdef.status_in_response_body_is_Address_successfully_updated()"
             },
             "keyword": "And "
           }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-24T06:48:43.170Z",
-        "line": 18,
-        "name": "Verify that user can get the place successfully using get place api",
-        "description": "",
-        "id": "place-validation;verify-that-user-can-get-the-place-successfully-using-get-place-api",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 2421300,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Add a place payload",
-            "match": {
-              "location": "apiStepdef.add_a_place_payload()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 212534200,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user calls AddPlaceAPI with post http request",
-            "match": {
-              "location": "apiStepdef.user_calls_AddPlaceAPI_with_post_http_request()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 78200,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "The Post API call got success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 47
-                }
-              ],
-              "location": "apiStepdef.the_API_call_got_success_with_status_code(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 35631700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Status in response body is OK",
-            "match": {
-              "location": "apiStepdef.status_in_response_body_is_OK()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 398523000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user calls getPlaceAPI with get http request",
-            "match": {
-              "location": "apiStepdef.user_calls_getPlaceAPI_with_get_http_request()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 49600,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "The API get call got success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 46
-                }
-              ],
-              "location": "apiStepdef.the_API_get_call_got_success_with_status_code(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15913800,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Status in get response body should be correct",
-            "match": {
-              "location": "apiStepdef.status_in_get_response_body_should_be_correct()"
-            },
-            "keyword": "And "
+            "name": "@RegressionPost"
           }
         ]
       }
@@ -286,7 +77,7 @@
     "description": "",
     "id": "place-validation",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/placeValidation.feature",
+    "uri": "file:src/test/resources/features/placeValidationAPI.feature",
     "tags": []
   }
 ]
