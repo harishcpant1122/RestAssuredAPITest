@@ -5,7 +5,8 @@
     <classes>
       <class name="cucumber.Options.TestRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="reportGeneration"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>

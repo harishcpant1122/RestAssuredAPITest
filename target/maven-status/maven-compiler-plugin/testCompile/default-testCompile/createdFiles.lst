@@ -1,7 +1,10 @@
 pageobjects\ui\secureareaPage.class
 pageobjects\ui\loginPage.class
+pojo\api\AddPlace_location.class
 pageobjects\ui\welcomePage.class
+pojo\api\AddPlace.class
 perf\perfAPI.class
 stepDefinitions\api\apiStepdef.class
+stepDefinitions\api\apiCommon.class
 stepDefinitions\ui\uiStepDef.class
 cucumber\Options\TestRunner.class

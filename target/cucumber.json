@@ -3,41 +3,65 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-07T13:39:01.283Z",
-        "line": 5,
-        "name": "Verify that place is added successfully using add place api",
+        "start_timestamp": "2020-07-13T17:04:32.073Z",
+        "line": 14,
+        "name": "Verify that place is added successfully using add place post api",
         "description": "",
-        "id": "place-validation;verify-that-place-is-added-successfully-using-add-place-api",
+        "id": "place-validation-api-test;verify-that-place-is-added-successfully-using-add-place-post-api;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2168877500,
+              "duration": 1581706900,
               "status": "passed"
             },
             "line": 6,
-            "name": "Add a place payload",
+            "name": "Add a place payload with \"India\" \"Hindi\" and \"Sector 74 noida\"",
             "match": {
-              "location": "apiStepdef.add_a_place_payload()"
+              "arguments": [
+                {
+                  "val": "\"India\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hindi\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Sector 74 noida\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiStepdef.add_a_place_payload_with_and(String,String,String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4104042700,
+              "duration": 1489913900,
               "status": "passed"
             },
             "line": 7,
-            "name": "user calls AddPlaceAPI with post http request",
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
             "match": {
-              "location": "apiStepdef.user_calls_AddPlaceAPI_with_post_http_request()"
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "apiStepdef.user_calls_with_http_request(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 9601000,
+              "duration": 3240000,
               "status": "passed"
             },
             "line": 8,
@@ -55,27 +79,169 @@
           },
           {
             "result": {
-              "duration": 2429296200,
+              "duration": 1321997000,
               "status": "passed"
             },
             "line": 9,
-            "name": "Status in response body is OK",
+            "name": "\"status\" in response body is \"OK\"",
             "match": {
-              "location": "apiStepdef.status_in_response_body_is_OK()"
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "apiStepdef.in_response_body_is(String,String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RegressionPost"
+            "name": "@APITest"
+          },
+          {
+            "name": "@APITestPost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-13T17:04:36.478Z",
+        "line": 29,
+        "name": "Verify that GET API is successfully getting the places",
+        "description": "",
+        "id": "place-validation-api-test;verify-that-get-api-is-successfully-getting-the-places;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9335500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Add a place payload with \"India\" \"Hindi\" and \"Sector 74 noida\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"India\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hindi\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Sector 74 noida\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiStepdef.add_a_place_payload_with_and(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243332200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "apiStepdef.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "apiStepdef.api_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98162600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "apiStepdef.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 436683400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Verify the \"India\" when user calls the \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"India\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 39
+                }
+              ],
+              "location": "apiStepdef.verify_the_when_user_calls_the(String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITest"
+          },
+          {
+            "name": "@APITestGet"
           }
         ]
       }
     ],
-    "name": "Place Validation",
+    "name": "Place Validation API Test",
     "description": "",
-    "id": "place-validation",
+    "id": "place-validation-api-test",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/placeValidationAPI.feature",
     "tags": []

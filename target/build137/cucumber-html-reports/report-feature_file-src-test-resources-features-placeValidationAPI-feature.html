@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 33) - Feature: Place Validation</title>
+<title>Cucumber Reports (no 137) - Feature: Place Validation API Test</title>
 
 </head>
 <body>
@@ -76,8 +76,8 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>GSRestAssuredFramework</td>
-              <td>33</td>
-            <td>07 Jul 2020, 19:09</td>
+              <td>137</td>
+            <td>13 Jul 2020, 22:34</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Place Validation</td>
-                    <td      class="passed"    >4</td>
+          <td class="tagname">Place Validation API Test</td>
+                    <td      class="passed"    >9</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td class="total">9</td>
 
-          <td  class="passed"    >1</td>
+          <td  class="passed"    >2</td>
           <td >0</td>
-          <td class="total">1</td>
+          <td class="total">2</td>
 
-          <td class="duration" data-value="8711817400">8.711</td>
+          <td class="duration" data-value="5184504200">5.184</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -176,7 +176,7 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Place Validation</span>
+  <span class="name">Place Validation API Test</span>
   
 
   </div>
@@ -190,18 +190,19 @@ $(document).ready(function() {
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_RegressionPost.html">@RegressionPost</a>
+           <a href="report-tag_APITest.html">@APITest</a>
+           <a href="report-tag_APITestPost.html">@APITestPost</a>
       </div>
 
   
-  <span class="lead-duration duration">8.711</span>
+  <span class="lead-duration duration">4.396</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify that place is added successfully using add place api</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify that place is added successfully using add place post api</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -233,9 +234,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Add a place payload</span>
+  <span class="name">Add a place payload with &quot;India&quot; &quot;Hindi&quot; and &quot;Sector 74 noida&quot;</span>
   
-  <span class="lead-duration duration">2.168</span>
+  <span class="lead-duration duration">1.581</span>
 
   </div>
 
@@ -254,9 +255,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user calls AddPlaceAPI with post http request</span>
+  <span class="name">User calls &quot;AddPlaceAPI&quot; with &quot;POST&quot; http request</span>
   
-  <span class="lead-duration duration">4.104</span>
+  <span class="lead-duration duration">1.489</span>
 
   </div>
 
@@ -277,7 +278,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">API call got success with status code 200</span>
   
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -296,9 +297,169 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Status in response body is OK</span>
+  <span class="name">&quot;status&quot; in response body is &quot;OK&quot;</span>
   
-  <span class="lead-duration duration">2.429</span>
+  <span class="lead-duration duration">1.321</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_APITest.html">@APITest</a>
+           <a href="report-tag_APITestGet.html">@APITestGet</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.787</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify that GET API is successfully getting the places</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Add a place payload with &quot;India&quot; &quot;Hindi&quot; and &quot;Sector 74 noida&quot;</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls &quot;AddPlaceAPI&quot; with &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">0.243</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success with status code 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">&quot;status&quot; in response body is &quot;OK&quot;</span>
+  
+  <span class="lead-duration duration">0.098</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the &quot;India&quot; when user calls the &quot;GetPlaceAPI&quot;</span>
+  
+  <span class="lead-duration duration">0.436</span>
 
   </div>
 

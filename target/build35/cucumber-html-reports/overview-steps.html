@@ -42,10 +42,9 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 33) - Failures Overview</title>
+<title>Cucumber Reports (no 35) - Steps Overview</title>
 
 </head>
-
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
@@ -55,8 +54,8 @@ $(document).ready(function() {
       <ul class="nav navbar-nav navbar-right">
                 <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
-        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
-                <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -77,8 +76,8 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>GSRestAssuredFramework</td>
-              <td>33</td>
-            <td>07 Jul 2020, 19:09</td>
+              <td>35</td>
+            <td>07 Jul 2020, 20:43</td>
     </tr>
   </tbody>
 </table>
@@ -91,47 +90,80 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Failures Overview</h2>
-          <p>The following summary displays scenarios that failed.</p>
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
       </div>
 </div>
-
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-10">
-      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
-        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
-      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
-        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
-    </div>
-  </div>
-</div>
-
 
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
 
-              <p>You have no failed scenarios in your Cucumber report</p>
-      
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">apiStepdef.add_a_place_payload()</td>
+              <td>1</td>
+              <td class="duration" data-value="2006183800">2.006</td>
+              <td class="duration" data-value="2006183800">2.006</td>
+              <td class="duration" data-value="2006183800">2.006</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">apiStepdef.api_call_got_success_with_status_code(Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="3359200">0.003</td>
+              <td class="duration" data-value="3359200">0.003</td>
+              <td class="duration" data-value="3359200">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">apiStepdef.status_in_response_body_is_OK()</td>
+              <td>1</td>
+              <td class="duration" data-value="1745116800">1.745</td>
+              <td class="duration" data-value="1745116800">1.745</td>
+              <td class="duration" data-value="1745116800">1.745</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">apiStepdef.user_calls_AddPlaceAPI_with_post_http_request()</td>
+              <td>1</td>
+              <td class="duration" data-value="4281442700">4.281</td>
+              <td class="duration" data-value="4281442700">4.281</td>
+              <td class="duration" data-value="4281442700">4.281</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>4</td>
+            <td>4</td>
+            <td class="duration">2.009</td>
+            <td class="duration">4.281</td>
+            <td class="duration">8.036</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
     </div>
   </div>
 </div>
 
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-10">
-      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
-        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
-      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
-        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
-    </div>
-  </div>
-</div>
-
-<br>
 
 <nav class="navbar navbar-default" id="footer">
   <div class="container-fluid">
