@@ -5,7 +5,10 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.Properties;
 
+import org.apache.logging.log4j.Logger;
+
 import core.api.GetAPIConf;
+import core.common.GetLogger;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -14,8 +17,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class apiCommon {
-	
+public class apiCommon extends GetLogger {
 	static RequestSpecification reqSpec;
 	Properties p=GetAPIConf.getAPIConfig();
 	public RequestSpecification requestSpecification(String apiName) throws FileNotFoundException,SecurityException
@@ -30,6 +32,7 @@ public class apiCommon {
 			.setContentType(ContentType.JSON)
 			.build();
 		}
+		GetLogger.logger.info("Request Specification generated for : "+apiName);
 		return reqSpec;
 	}
 	

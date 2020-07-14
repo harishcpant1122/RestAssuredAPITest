@@ -7,7 +7,11 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+
+import org.apache.logging.log4j.Logger;
+
 import core.api.*;
+import core.common.GetLogger;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,12 +25,10 @@ import pojo.api.AddPlace_location;
 
 
 public class apiStepdef extends apiCommon  {
-	//RequestSpecification requestBasic;
 	RequestSpecification request;
 	Response apiResponse;
 	JsonPath jsonPath;
 	String placeId;
-	
 	
 	@Given("Add a place payload with {string} {string} and {string}")
 	public void add_a_place_payload_with_and(String name, String language, String address) throws FileNotFoundException, SecurityException {
@@ -50,6 +52,8 @@ public class apiStepdef extends apiCommon  {
 		request=given()
 				.spec(requestSpecification("PlaceAPIBaseURL"))
 				.body(postPayload);
+		
+		GetLogger.logger.info("Add Payload step Completed.");
 	}	
 	
 	
@@ -66,7 +70,9 @@ public class apiStepdef extends apiCommon  {
 		if (httpMethod.equalsIgnoreCase("PUT"))
 		{
 			apiResponse=request.when().put(p.getProperty(infoUrl));
-		}		
+		}	
+		
+		GetLogger.logger.info("httpMethod is : "+httpMethod);
 	}
 	
 	@Then("{string} in response body is {string}")		

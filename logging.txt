@@ -27,7 +27,7 @@ Body:
     "language": "Hindi"
 }
 HTTP/1.1 200 OK
-Date: Mon, 13 Jul 2020 17:04:43 GMT
+Date: Tue, 14 Jul 2020 12:08:08 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,93 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "ebaf7af107b15b09fe2fdc483aed7b15",
+    "place_id": "2467c060fb4483bcb7af79eb93478611",
     "scope": "APP",
-    "reference": "f7dddacf468b0df2c37c5367775cd315f7dddacf468b0df2c37c5367775cd315",
-    "id": "f7dddacf468b0df2c37c5367775cd315"
-}
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "location": {
-        "lat": -38.383494,
-        "lng": 33.427362
-    },
-    "accuracy": 50,
-    "name": "India",
-    "phone_number": "(+91) 983 893 3937",
-    "address": "Sector 74 noida",
-    "types": [
-        "shoe park",
-        "shop"
-    ],
-    "website": "http://google.com",
-    "language": "Hindi"
-}
-HTTP/1.1 200 OK
-Date: Mon, 13 Jul 2020 17:04:45 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "status": "OK",
-    "place_id": "88dedab95d92fcdff425d1d1a74c7830",
-    "scope": "APP",
-    "reference": "cd13ac6416423868c54e5506e0f645c1cd13ac6416423868c54e5506e0f645c1",
-    "id": "cd13ac6416423868c54e5506e0f645c1"
-}
-Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=88dedab95d92fcdff425d1d1a74c7830
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-				place_id=88dedab95d92fcdff425d1d1a74c7830
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Mon, 13 Jul 2020 17:04:45 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 233
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "India",
-    "phone_number": "(+91) 983 893 3937",
-    "address": "Sector 74 noida",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "Hindi"
+    "reference": "d0cb7ffa993bb8150982714070e2a72ed0cb7ffa993bb8150982714070e2a72e",
+    "id": "d0cb7ffa993bb8150982714070e2a72e"
 }

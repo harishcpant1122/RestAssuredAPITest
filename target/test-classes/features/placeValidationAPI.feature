@@ -15,18 +15,18 @@ Examples:
 #|USA    	|	English		|	state street   			|
 
 
-@APITest @APITestGet
-Scenario Outline: Verify that GET API is successfully getting the places
-Given Add a place payload with "<name>" "<language>" and "<address>" 
-When User calls "AddPlaceAPI" with "POST" http request
-Then API call got success with status code 200
-And "status" in response body is "OK"
-When Verify the "<name>" when user calls the "GetPlaceAPI" 
-
-Examples:
-
-|name 		| language  | address 					  |
-|India  	|	Hindi 		|	Sector 74 noida			|
+#@APITest @APITestGet
+#Scenario Outline: Verify that GET API is successfully getting the places
+#Given Add a place payload with "<name>" "<language>" and "<address>" 
+#When User calls "AddPlaceAPI" with "POST" http request
+#Then API call got success with status code 200
+#And "status" in response body is "OK"
+#When Verify the "<name>" when user calls the "GetPlaceAPI" 
+#
+#Examples:
+#
+#|name 		| language  | address 					  |
+#|India  	|	Hindi 		|	Sector 74 noida			|
 
 
 
