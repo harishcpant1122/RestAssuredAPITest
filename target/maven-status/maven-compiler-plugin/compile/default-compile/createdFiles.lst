@@ -1,4 +1,5 @@
 core\api\GetAPIConf.class
+core\api\GetProperties.class
 core\common\GenerateTestReport.class
 core\ui\DriverManager.class
 core\ui\webdriverCore.class

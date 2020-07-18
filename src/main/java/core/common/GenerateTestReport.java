@@ -39,7 +39,7 @@ public class GenerateTestReport {
 
 		ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
 		reportBuilder.generateReports();
-		logger.info("Resport Generation Done.");
+		logger.info("Report Generation Done.");
 	}
 
 	public static void writeLong(String filename, long number) throws IOException {

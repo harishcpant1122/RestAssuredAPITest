@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="9001" started-at="2020-07-14T11:13:34Z" finished-at="2020-07-14T11:13:43Z">
+  <suite name="Surefire suite" duration-ms="10048" started-at="2020-07-18T10:43:05Z" finished-at="2020-07-18T10:43:15Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@36d4b5c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2ef5e5e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="9001" started-at="2020-07-14T11:13:34Z" finished-at="2020-07-14T11:13:43Z">
+    <test name="Surefire test" duration-ms="10048" started-at="2020-07-18T10:43:05Z" finished-at="2020-07-18T10:43:15Z">
       <class name="cucumber.Options.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@36d4b5c]" name="setUpClass" is-config="true" duration-ms="219" started-at="2020-07-14T16:43:34Z" finished-at="2020-07-14T16:43:35Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@2ef5e5e3]" name="setUpClass" is-config="true" duration-ms="291" started-at="2020-07-18T16:13:05Z" finished-at="2020-07-18T16:13:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@36d4b5c]" name="runScenario" duration-ms="8605" started-at="2020-07-14T16:43:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-14T16:43:43Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2ef5e5e3]" name="runScenario" duration-ms="9282" started-at="2020-07-18T16:13:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-18T16:13:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify that place is added successfully using add place post api"]]>
+                <![CDATA["Verify that PUT API is successfully updating the places"]]>
               </value>
             </param>
             <param index="1">
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@36d4b5c]" name="tearDownClass" is-config="true" duration-ms="87" started-at="2020-07-14T16:43:43Z" finished-at="2020-07-14T16:43:43Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@2ef5e5e3]" name="tearDownClass" is-config="true" duration-ms="342" started-at="2020-07-18T16:13:14Z" finished-at="2020-07-18T16:13:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="reportGeneration()[pri:0, instance:cucumber.Options.TestRunner@36d4b5c]" name="reportGeneration" is-config="true" duration-ms="11951" started-at="2020-07-14T16:43:43Z" finished-at="2020-07-14T16:43:55Z">
+        <test-method status="PASS" signature="reportGeneration()[pri:0, instance:cucumber.Options.TestRunner@2ef5e5e3]" name="reportGeneration" is-config="true" duration-ms="6763" started-at="2020-07-18T16:13:15Z" finished-at="2020-07-18T16:13:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportGeneration -->

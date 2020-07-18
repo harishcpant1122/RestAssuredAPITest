@@ -4,23 +4,24 @@ import java.io.FileReader;
 import java.util.Properties;
 import org.json.simple.parser.JSONParser;
 import core.common.GetEnvDetails;
+import core.common.GetLogger;
 
-public class GetAPITestData  {
-	static Properties p=GetEnvDetails.getEnvDetails();
-	public static String getAPITestData(String apiFileName)
+public class GetAPITestData extends GetEnvDetails  
+{
+	static Properties env=GetEnvDetails.getEnvDetails();
+	static FileReader reader;
+	static Properties p;
+	public static Properties getAPITestData(String feature)
 	{
-		JSONParser parser = new JSONParser();
-		Object obj;
-		String postPayload=null;
-		String env=p.getProperty("environment");
-		//String apiFileName="placeValidationPostAPI";
 		try {
-			obj= parser.parse(new FileReader("src/test/resources/TestData/"+env+"/"+apiFileName+".json"));
-			postPayload=obj.toString();			
+			reader=new FileReader("src/test/resources/TestData/API/"+env.getProperty("environment")+"/request/"+feature+".properties");
+			p=new Properties();			
+			p.load(reader);	
+			//GetLogger.logger.info("Test Environement : "+env.getProperty("environment"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return postPayload;
+		return p;		
 	}
 
 }

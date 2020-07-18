@@ -20,7 +20,6 @@ public class TestRunner extends AbstractTestNGCucumberTests
 	@AfterSuite
 	public void reportGeneration() {
 		try {
-			//System.out.println("waiting for 10 seconds.....");
 			Thread.sleep(5000);	
 			GenerateTestReport g=new GenerateTestReport();
 			g.generateCucumberReport();			

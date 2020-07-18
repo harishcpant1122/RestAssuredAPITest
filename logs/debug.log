@@ -1,6 +1,71 @@
-2020-07-14 17:37:57 INFO  GetLogger:20 - Test Environement : QA
-2020-07-14 17:37:58 INFO  GetLogger:35 - Request Specification generated for : PlaceAPIBaseURL
-2020-07-14 17:37:58 INFO  GetLogger:56 - Add Payload step Completed.
-2020-07-14 17:38:00 INFO  GetLogger:75 - httpMethod is : POST
-2020-07-14 17:38:06 INFO  GetLogger:22 - Report Generation Started.
-2020-07-14 17:38:07 INFO  GetLogger:42 - Resport Generation Done.
+2020-07-18 15:56:09 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 15:56:15 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 15:56:15 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"840f71489dfb471d00b1f33b60e38599","scope":"APP","reference":"714336825b98f84d047b3262c42da13f714336825b98f84d047b3262c42da13f","id":"714336825b98f84d047b3262c42da13f"}
+2020-07-18 15:56:16 INFO  GetLogger:67 - placeId is : 840f71489dfb471d00b1f33b60e38599
+2020-07-18 15:56:16 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 15:56:17 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 15:56:17 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"a9e230a03548af83de520c0167690069","scope":"APP","reference":"3e6efaa3354c9e940809ba23f121ce603e6efaa3354c9e940809ba23f121ce60","id":"3e6efaa3354c9e940809ba23f121ce60"}
+2020-07-18 15:56:17 INFO  GetLogger:67 - placeId is : a9e230a03548af83de520c0167690069
+2020-07-18 15:56:17 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 15:56:17 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 15:56:17 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"867398334a4c0159ca06a0b41bf5fd54","scope":"APP","reference":"2c5cecb635f952a4cdae60bf27f712652c5cecb635f952a4cdae60bf27f71265","id":"2c5cecb635f952a4cdae60bf27f71265"}
+2020-07-18 15:56:17 INFO  GetLogger:67 - placeId is : 867398334a4c0159ca06a0b41bf5fd54
+2020-07-18 15:56:17 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 15:56:17 INFO  GetLogger:68 - httpMethod is: GET and infoUrl is: maps/api/place/get/json
+2020-07-18 15:56:17 INFO  GetLogger:69 - GetPlaceAPI API Call Response : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"India","phone_number":"(+91) 983 893 3937","address":"Sector 74 noida QA","types":"shoe park,shop","website":"http:\/\/google.com","language":"Hindi"}
+2020-07-18 15:56:17 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 15:56:18 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 15:56:18 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"68c929b764a39e5f95c5bf23021e0487","scope":"APP","reference":"931f74fd3699afe0dc84d85e9f37ebe7931f74fd3699afe0dc84d85e9f37ebe7","id":"931f74fd3699afe0dc84d85e9f37ebe7"}
+2020-07-18 15:56:18 INFO  GetLogger:67 - placeId is : 68c929b764a39e5f95c5bf23021e0487
+2020-07-18 15:56:18 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 15:56:18 INFO  GetLogger:68 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
+2020-07-18 15:56:18 INFO  GetLogger:69 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
+2020-07-18 15:56:24 INFO  GetLogger:22 - Report Generation Started.
+2020-07-18 15:56:26 INFO  GetLogger:42 - Report Generation Done.
+2020-07-18 16:01:51 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:01:55 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:01:55 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"3479b370d32b40cf9945e1fb92a66fc4","scope":"APP","reference":"7838d7c211c09cd334d3522ed6db8a897838d7c211c09cd334d3522ed6db8a89","id":"7838d7c211c09cd334d3522ed6db8a89"}
+2020-07-18 16:01:57 INFO  GetLogger:67 - placeId is : 3479b370d32b40cf9945e1fb92a66fc4
+2020-07-18 16:01:57 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:01:57 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:01:57 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"be6e3cde5d9a6dc3b2962535293795f3","scope":"APP","reference":"8d8cf185885e87b42fdef8b44bf13d068d8cf185885e87b42fdef8b44bf13d06","id":"8d8cf185885e87b42fdef8b44bf13d06"}
+2020-07-18 16:01:57 INFO  GetLogger:67 - placeId is : be6e3cde5d9a6dc3b2962535293795f3
+2020-07-18 16:01:57 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:01:57 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:01:57 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"0137cf928d4188b5547bffcc648eb1e0","scope":"APP","reference":"7b495e39eecf6fb409e1ec0a37f4b86d7b495e39eecf6fb409e1ec0a37f4b86d","id":"7b495e39eecf6fb409e1ec0a37f4b86d"}
+2020-07-18 16:01:57 INFO  GetLogger:67 - placeId is : 0137cf928d4188b5547bffcc648eb1e0
+2020-07-18 16:01:57 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:01:58 INFO  GetLogger:68 - httpMethod is: GET and infoUrl is: maps/api/place/get/json
+2020-07-18 16:01:58 INFO  GetLogger:69 - GetPlaceAPI API Call Response : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"India","phone_number":"(+91) 983 893 3937","address":"Sector 74 noida QA","types":"shoe park,shop","website":"http:\/\/google.com","language":"Hindi"}
+2020-07-18 16:01:58 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:01:59 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:01:59 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"2cf37dde6d849ea420f17d6589600779","scope":"APP","reference":"ef843718791aff8dbb804c99bac09413ef843718791aff8dbb804c99bac09413","id":"ef843718791aff8dbb804c99bac09413"}
+2020-07-18 16:01:59 INFO  GetLogger:67 - placeId is : 2cf37dde6d849ea420f17d6589600779
+2020-07-18 16:01:59 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:02:00 INFO  GetLogger:68 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
+2020-07-18 16:02:00 INFO  GetLogger:69 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
+2020-07-18 16:02:05 INFO  GetLogger:22 - Report Generation Started.
+2020-07-18 16:02:08 INFO  GetLogger:42 - Report Generation Done.
+2020-07-18 16:04:57 INFO  GetLogger:22 - Report Generation Started.
+2020-07-18 16:04:59 INFO  GetLogger:42 - Report Generation Done.
+2020-07-18 16:05:54 INFO  GetLogger:22 - Report Generation Started.
+2020-07-18 16:05:55 INFO  GetLogger:42 - Report Generation Done.
+2020-07-18 16:07:11 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:07:16 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:07:16 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"11e2eb92ba6fa3034aa81b118a9555ac","scope":"APP","reference":"e9de87325f6ac1493918f541ef0d008fe9de87325f6ac1493918f541ef0d008f","id":"e9de87325f6ac1493918f541ef0d008f"}
+2020-07-18 16:07:18 INFO  GetLogger:67 - placeId is : 11e2eb92ba6fa3034aa81b118a9555ac
+2020-07-18 16:07:18 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:07:18 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:07:18 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"c90bd40675d2da99f273589b6e9ec1d2","scope":"APP","reference":"6fa77e93346a8f5aad2d412249317cbb6fa77e93346a8f5aad2d412249317cbb","id":"6fa77e93346a8f5aad2d412249317cbb"}
+2020-07-18 16:07:18 INFO  GetLogger:67 - placeId is : c90bd40675d2da99f273589b6e9ec1d2
+2020-07-18 16:07:23 INFO  GetLogger:22 - Report Generation Started.
+2020-07-18 16:07:25 INFO  GetLogger:42 - Report Generation Done.
+2020-07-18 16:13:08 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:13:13 INFO  GetLogger:68 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-18 16:13:13 INFO  GetLogger:69 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"007214d3cc13aafa89833ce5a3a841f5","scope":"APP","reference":"8f3b59972b5c5d1a9320c95c552efeab8f3b59972b5c5d1a9320c95c552efeab","id":"8f3b59972b5c5d1a9320c95c552efeab"}
+2020-07-18 16:13:14 INFO  GetLogger:67 - placeId is : 007214d3cc13aafa89833ce5a3a841f5
+2020-07-18 16:13:14 INFO  GetLogger:41 - Request Specification generated for : https://rahulshettyacademy.com
+2020-07-18 16:13:14 INFO  GetLogger:68 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
+2020-07-18 16:13:14 INFO  GetLogger:69 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
+2020-07-18 16:13:20 INFO  GetLogger:22 - Report Generation Started.
+2020-07-18 16:13:22 INFO  GetLogger:42 - Report Generation Done.

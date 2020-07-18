@@ -1,5 +1,7 @@
 package stepDefinitions.api;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -20,6 +22,10 @@ import io.restassured.specification.RequestSpecification;
 public class apiCommon extends GetLogger {
 	static RequestSpecification reqSpec;
 	Properties p=GetAPIConf.getAPIConfig();
+	
+	
+	Response apiResponse;
+	
 	public RequestSpecification requestSpecification(String apiName) throws FileNotFoundException,SecurityException
 	{
 		if (reqSpec==null)
@@ -32,7 +38,7 @@ public class apiCommon extends GetLogger {
 			.setContentType(ContentType.JSON)
 			.build();
 		}
-		GetLogger.logger.info("Request Specification generated for : "+apiName);
+		GetLogger.logger.info("Request Specification generated for : "+p.getProperty(apiName));
 		return reqSpec;
 	}
 	
@@ -43,4 +49,31 @@ public class apiCommon extends GetLogger {
 		return jp.get(key).toString();
 		
 	}
+
+	public Response callAPI(RequestSpecification request,String infoUrl, String httpMethod)
+	{
+		if (httpMethod.equalsIgnoreCase("POST"))
+		{			
+			apiResponse=request.when().post(p.getProperty(infoUrl));
+		}
+		else if (httpMethod.equalsIgnoreCase("GET"))
+		{
+			apiResponse=request.when().get(p.getProperty(infoUrl));
+		}
+		if (httpMethod.equalsIgnoreCase("PUT"))
+		{
+			apiResponse=request.when().put(p.getProperty(infoUrl));
+		}	
+		
+		GetLogger.logger.info("httpMethod is: "+ httpMethod+ " and infoUrl is: "+ p.getProperty(infoUrl));
+		GetLogger.logger.info(infoUrl +" API Call Response : "+ apiResponse.asString());
+		
+		return apiResponse;
+	}
+	
+	public void assertEqualsCustom(String expected,String actual)
+	{
+		assertEquals(expected,actual,"Expected is: "+expected+", But Actual is: "+actual+"  /");		
+	}
+	
 }

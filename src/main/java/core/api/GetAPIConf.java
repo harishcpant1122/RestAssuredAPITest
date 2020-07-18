@@ -17,7 +17,7 @@ public class GetAPIConf extends GetEnvDetails {
 			reader=new FileReader("src/test/resources/Properties/apiConf"+getEnvDetails().getProperty("environment")+".properties");
 			p=new Properties();			
 			p.load(reader);	
-			GetLogger.logger.info("Test Environement : "+getEnvDetails().getProperty("environment"));
+			//GetLogger.logger.info("Test Environement : "+getEnvDetails().getProperty("environment"));
 			
 		} catch (IOException e) {
 			

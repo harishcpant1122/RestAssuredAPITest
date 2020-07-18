@@ -3,46 +3,46 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-14T12:07:56.776Z",
-        "line": 14,
-        "name": "Verify that place is added successfully using add place post api",
+        "start_timestamp": "2020-07-18T10:43:06.154Z",
+        "line": 47,
+        "name": "Verify that PUT API is successfully updating the places",
         "description": "",
-        "id": "place-validation-api-test;verify-that-place-is-added-successfully-using-add-place-post-api;;2",
+        "id": "place-validation-api-test;verify-that-put-api-is-successfully-updating-the-places;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2213482800,
+              "duration": 3433969600,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Add a place payload with \"India\" \"Hindi\" and \"Sector 74 noida\"",
+            "line": 36,
+            "name": "Add a place payload with \"Scenario1_AddPlace_name\" \"Scenario1_AddPlace_language\" and \"Scenario1_AddPlace_address\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"India\"",
+                  "val": "\"Scenario1_AddPlace_name\"",
                   "offset": 25
                 },
                 {
-                  "val": "\"Hindi\"",
-                  "offset": 33
+                  "val": "\"Scenario1_AddPlace_language\"",
+                  "offset": 51
                 },
                 {
-                  "val": "\"Sector 74 noida\"",
-                  "offset": 45
+                  "val": "\"Scenario1_AddPlace_address\"",
+                  "offset": 85
                 }
               ],
-              "location": "apiStepdef.add_a_place_payload_with_and(String,String,String)"
+              "location": "PlaceSteps.add_a_place_payload_with_and(String,String,String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1472082300,
+              "duration": 3765195900,
               "status": "passed"
             },
-            "line": 7,
+            "line": 37,
             "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
             "match": {
               "arguments": [
@@ -55,16 +55,16 @@
                   "offset": 30
                 }
               ],
-              "location": "apiStepdef.user_calls_with_http_request(String,String)"
+              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2854000,
+              "duration": 4822800,
               "status": "passed"
             },
-            "line": 8,
+            "line": 38,
             "name": "API call got success with status code 200",
             "match": {
               "arguments": [
@@ -73,16 +73,16 @@
                   "offset": 38
                 }
               ],
-              "location": "apiStepdef.api_call_got_success_with_status_code(Integer)"
+              "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 981043100,
+              "duration": 1082163900,
               "status": "passed"
             },
-            "line": 9,
+            "line": 39,
             "name": "\"status\" in response body is \"OK\"",
             "match": {
               "arguments": [
@@ -95,9 +95,75 @@
                   "offset": 29
                 }
               ],
-              "location": "apiStepdef.in_response_body_is(String,String)"
+              "location": "PlaceSteps.in_response_body_is(String,String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10871600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Update a place payload with \"Scenario1_UpdatePlace_address\" and \"Scenario1_UpdatePlace_key\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Scenario1_UpdatePlace_address\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Scenario1_UpdatePlace_key\"",
+                  "offset": 64
+                }
+              ],
+              "location": "PlaceSteps.update_a_place_payload_with_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 508693700,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdatePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18937200,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "\"msg\" in response body is \"Address successfully updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Address successfully updated\"",
+                  "offset": 26
+                }
+              ],
+              "location": "PlaceSteps.in_response_body_is(String,String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -105,7 +171,7 @@
             "name": "@APITest"
           },
           {
-            "name": "@APITestPost"
+            "name": "@APITestPut"
           }
         ]
       }
@@ -114,7 +180,7 @@
     "description": "",
     "id": "place-validation-api-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/placeValidationAPI.feature",
+    "uri": "file:src/test/resources/features/API_F1_place.feature",
     "tags": []
   }
 ]
