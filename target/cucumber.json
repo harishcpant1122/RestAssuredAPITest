@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-18T10:43:06.154Z",
-        "line": 47,
-        "name": "Verify that PUT API is successfully updating the places",
+        "start_timestamp": "2020-07-18T12:50:00.923Z",
+        "line": 14,
+        "name": "Verify that place is added successfully using add place post api",
         "description": "",
-        "id": "place-validation-api-test;verify-that-put-api-is-successfully-updating-the-places;;2",
+        "id": "place-validation-api-test;verify-that-place-is-added-successfully-using-add-place-post-api;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3433969600,
+              "duration": 2115675000,
               "status": "passed"
             },
-            "line": 36,
+            "line": 6,
             "name": "Add a place payload with \"Scenario1_AddPlace_name\" \"Scenario1_AddPlace_language\" and \"Scenario1_AddPlace_address\"",
             "match": {
               "arguments": [
@@ -39,10 +39,10 @@
           },
           {
             "result": {
-              "duration": 3765195900,
+              "duration": 1575248200,
               "status": "passed"
             },
-            "line": 37,
+            "line": 7,
             "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
             "match": {
               "arguments": [
@@ -61,10 +61,10 @@
           },
           {
             "result": {
-              "duration": 4822800,
+              "duration": 2593500,
               "status": "passed"
             },
-            "line": 38,
+            "line": 8,
             "name": "API call got success with status code 200",
             "match": {
               "arguments": [
@@ -79,10 +79,10 @@
           },
           {
             "result": {
-              "duration": 1082163900,
+              "duration": 1062443000,
               "status": "passed"
             },
-            "line": 39,
+            "line": 9,
             "name": "\"status\" in response body is \"OK\"",
             "match": {
               "arguments": [
@@ -98,72 +98,6 @@
               "location": "PlaceSteps.in_response_body_is(String,String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10871600,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Update a place payload with \"Scenario1_UpdatePlace_address\" and \"Scenario1_UpdatePlace_key\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Scenario1_UpdatePlace_address\"",
-                  "offset": 28
-                },
-                {
-                  "val": "\"Scenario1_UpdatePlace_key\"",
-                  "offset": 64
-                }
-              ],
-              "location": "PlaceSteps.update_a_place_payload_with_and(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 508693700,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"UpdatePlaceAPI\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"PUT\"",
-                  "offset": 33
-                }
-              ],
-              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 18937200,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "\"msg\" in response body is \"Address successfully updated\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"msg\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"Address successfully updated\"",
-                  "offset": 26
-                }
-              ],
-              "location": "PlaceSteps.in_response_body_is(String,String)"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
@@ -171,7 +105,7 @@
             "name": "@APITest"
           },
           {
-            "name": "@APITestPut"
+            "name": "@APITestPost"
           }
         ]
       }

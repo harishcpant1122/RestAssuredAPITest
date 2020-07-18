@@ -27,7 +27,7 @@ Body:
     "language": "Hindi"
 }
 HTTP/1.1 200 OK
-Date: Sat, 18 Jul 2020 10:43:27 GMT
+Date: Sat, 18 Jul 2020 12:50:18 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,40 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "007214d3cc13aafa89833ce5a3a841f5",
+    "place_id": "64763237f22bc724cad49d7247d14980",
     "scope": "APP",
-    "reference": "8f3b59972b5c5d1a9320c95c552efeab8f3b59972b5c5d1a9320c95c552efeab",
-    "id": "8f3b59972b5c5d1a9320c95c552efeab"
-}
-Request method:	PUT
-Request URI:	https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "place_id": "007214d3cc13aafa89833ce5a3a841f5",
-    "address": "Sector 74 noida updated QA",
-    "key": "qaclick123"
-}
-HTTP/1.1 200 OK
-Date: Sat, 18 Jul 2020 10:43:28 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 38
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "msg": "Address successfully updated"
+    "reference": "537ffd5bdca8be3f56a3bf2945e5480b537ffd5bdca8be3f56a3bf2945e5480b",
+    "id": "537ffd5bdca8be3f56a3bf2945e5480b"
 }

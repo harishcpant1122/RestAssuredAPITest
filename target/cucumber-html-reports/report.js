@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Verify that PUT API is successfully updating the places",
+  "name": "Verify that place is added successfully using add place post api",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -13,7 +13,7 @@ formatter.scenarioOutline({
       "name": "@APITest"
     },
     {
-      "name": "@APITestPut"
+      "name": "@APITestPost"
     }
   ]
 });
@@ -33,18 +33,6 @@ formatter.step({
   "name": "\"status\" in response body is \"OK\"",
   "keyword": "And "
 });
-formatter.step({
-  "name": "Update a place payload with \"\u003cupdatedAddress\u003e\" and \"\u003ckey\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "\"msg\" in response body is \"Address successfully updated\"",
-  "keyword": "Then "
-});
 formatter.examples({
   "name": "",
   "description": "",
@@ -54,24 +42,20 @@ formatter.examples({
       "cells": [
         "name",
         "language",
-        "address",
-        "updatedAddress",
-        "key"
+        "address"
       ]
     },
     {
       "cells": [
         "Scenario1_AddPlace_name",
         "Scenario1_AddPlace_language",
-        "Scenario1_AddPlace_address",
-        "Scenario1_UpdatePlace_address",
-        "Scenario1_UpdatePlace_key"
+        "Scenario1_AddPlace_address"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Verify that PUT API is successfully updating the places",
+  "name": "Verify that place is added successfully using add place post api",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -79,7 +63,7 @@ formatter.scenario({
       "name": "@APITest"
     },
     {
-      "name": "@APITestPut"
+      "name": "@APITestPost"
     }
   ]
 });
@@ -116,36 +100,6 @@ formatter.result({
 formatter.step({
   "name": "\"status\" in response body is \"OK\"",
   "keyword": "And "
-});
-formatter.match({
-  "location": "PlaceSteps.in_response_body_is(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Update a place payload with \"Scenario1_UpdatePlace_address\" and \"Scenario1_UpdatePlace_key\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "PlaceSteps.update_a_place_payload_with_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PlaceSteps.user_calls_with_http_request(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "\"msg\" in response body is \"Address successfully updated\"",
-  "keyword": "Then "
 });
 formatter.match({
   "location": "PlaceSteps.in_response_body_is(String,String)"

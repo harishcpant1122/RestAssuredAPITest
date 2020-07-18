@@ -5,6 +5,8 @@ import static org.testng.Assert.assertEquals;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import org.apache.logging.log4j.Logger;
@@ -30,9 +32,13 @@ public class apiCommon extends GetLogger {
 	{
 		if (reqSpec==null)
 		{
+			Map<String,String> map=new HashMap<String,String>();
+			map.put("key", "qaclick123");
+			
 			PrintStream log=new PrintStream(new FileOutputStream("logging.txt"));
 			reqSpec=(RequestSpecification) new RequestSpecBuilder().setBaseUri(p.getProperty(apiName))
-			.addQueryParam("key","qaclick123")
+			//.addQueryParam("key","qaclick123")
+			//.addQueryParams(map)
 			.addFilter(RequestLoggingFilter.logRequestTo(log))
 			.addFilter(ResponseLoggingFilter.logResponseTo(log))
 			.setContentType(ContentType.JSON)
