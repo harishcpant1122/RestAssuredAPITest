@@ -20,7 +20,7 @@ public class PlaceSteps extends apiCommon
 		
 		
 		PlaceBuilder placebuilder=new PlaceBuilder();
-		JSONObject testDataParams;
+		JSONObject testDataParameters;
 		JSONObject testDataHeaders;
 		JSONObject testDataPayload;
 		String baseUrl=apiCommon.getBaseUrl();
@@ -38,10 +38,10 @@ public class PlaceSteps extends apiCommon
 		
 		@When("Verify the {string} field value as {string} when user calls the {string} for {string}")
 		public void verify_the_field_value_as_when_user_calls_the_for(String key, String value, String infoUrl, String scenario) {
-			testDataParams= placebuilder.getParams(scenario);
+			testDataParameters= placebuilder.getParams(scenario);
 			request=given()
 					.baseUri(baseUrl)
-					.params(testDataParams)
+					.params(testDataParameters)
 					.queryParam("place_id", placeId);					
 			user_calls_with_http_request(infoUrl,"GET");	
 			assertEqualsCustom(value,getJasonPath(apiResponse,key));			
@@ -53,7 +53,6 @@ public class PlaceSteps extends apiCommon
 		public void create_an_update_place_request_with(String scenario) {
 			testDataPayload=placebuilder.getPayload(scenario);			
 			testDataPayload.replace("place_id", "a4eb0c8e2acf1509887cc53dcf595bda", placeId);
-			System.out.println("**************--->"+testDataPayload.get("place_id"));
 			request=given()
 					.baseUri(baseUrl)
 					.body(testDataPayload);

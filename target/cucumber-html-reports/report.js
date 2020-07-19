@@ -18,12 +18,20 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "name": "Add a place with \"\u003crequest\u003e\"",
+  "name": "Create an add place request with \"\u003caddPlaceRequest\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
   "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
   "keyword": "When "
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -32,13 +40,19 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "request",
+        "addPlaceRequest",
         "responseStatusCode"
       ]
     },
     {
       "cells": [
         "Req_AddPlace_Scenario1",
+        "200"
+      ]
+    },
+    {
+      "cells": [
+        "Req_AddPlace_Scenario2",
         "200"
       ]
     }
@@ -58,11 +72,11 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Add a place with \"Req_AddPlace_Scenario1\"",
+  "name": "Create an add place request with \"Req_AddPlace_Scenario1\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "PlaceSteps.add_a_place_with(String)"
+  "location": "PlaceSteps.create_an_add_place_request_with(String)"
 });
 formatter.result({
   "status": "passed"
@@ -75,7 +89,341 @@ formatter.match({
   "location": "PlaceSteps.user_calls_with_http_request(String,String)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.api.apiCommon.callAPI(apiCommon.java:85)\r\n\tat stepDefinitions.api.PlaceSteps.user_calls_with_http_request(PlaceSteps.java:72)\r\n\tat ✽.User calls \"AddPlaceAPI\" with \"POST\" http request(file:src/test/resources/features/API_F1_place.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "PlaceSteps.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify that place is added successfully using add place post api",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@APITest"
+    },
+    {
+      "name": "@APITestPost"
+    }
+  ]
+});
+formatter.step({
+  "name": "Create an add place request with \"Req_AddPlace_Scenario2\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PlaceSteps.create_an_add_place_request_with(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "PlaceSteps.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Verify that GET API is successfully getting the places",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@APITest"
+    },
+    {
+      "name": "@APITestGet"
+    }
+  ]
+});
+formatter.step({
+  "name": "Create an add place request with \"\u003caddPlaceRequest\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Verify the \"address\" field value as \"\u003cResponseName\u003e\" when user calls the \"GetPlaceAPI\" for \"\u003caddPlaceRequest\u003e\"",
+  "keyword": "When "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "addPlaceRequest",
+        "responseStatusCode",
+        "ResponseName"
+      ]
+    },
+    {
+      "cells": [
+        "Req_GetPlace_Scenario1",
+        "responseStatusCode",
+        "India Get Scenario 1 QA"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Verify that GET API is successfully getting the places",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@APITest"
+    },
+    {
+      "name": "@APITestGet"
+    }
+  ]
+});
+formatter.step({
+  "name": "Create an add place request with \"Req_GetPlace_Scenario1\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PlaceSteps.create_an_add_place_request_with(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "PlaceSteps.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the \"address\" field value as \"India Get Scenario 1 QA\" when user calls the \"GetPlaceAPI\" for \"Req_GetPlace_Scenario1\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PlaceSteps.verify_the_field_value_as_when_user_calls_the_for(String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Verify that PUT API is successfully updating the places",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@APITest"
+    },
+    {
+      "name": "@APITestPut"
+    }
+  ]
+});
+formatter.step({
+  "name": "Create an add place request with \"\u003caddPlaceRequest\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "Create an update place request with \"\u003cupdatePlaceRequest\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "\"msg\" in response body is \"Address successfully updated\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "addPlaceRequest",
+        "responseStatusCode",
+        "updatePlaceRequest"
+      ]
+    },
+    {
+      "cells": [
+        "Req_AddPlace_Scenario1",
+        "200",
+        "Req_updatePlace_Scenario1"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Verify that PUT API is successfully updating the places",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@APITest"
+    },
+    {
+      "name": "@APITestPut"
+    }
+  ]
+});
+formatter.step({
+  "name": "Create an add place request with \"Req_AddPlace_Scenario1\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PlaceSteps.create_an_add_place_request_with(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"status\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "PlaceSteps.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Create an update place request with \"Req_updatePlace_Scenario1\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PlaceSteps.create_an_update_place_request_with(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"msg\" in response body is \"Address successfully updated\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PlaceSteps.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "passed"
 });
 });

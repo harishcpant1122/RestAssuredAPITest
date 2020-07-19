@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-19T14:32:44.816Z",
+        "start_timestamp": "2020-07-19T18:08:40.971Z",
         "line": 14,
         "name": "Verify that place is added successfully using add place post api",
         "description": "",
@@ -13,27 +13,26 @@
         "steps": [
           {
             "result": {
-              "duration": 4256072200,
+              "duration": 5028826400,
               "status": "passed"
             },
             "line": 6,
-            "name": "Add a place with \"Req_AddPlace_Scenario1\"",
+            "name": "Create an add place request with \"Req_AddPlace_Scenario1\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Req_AddPlace_Scenario1\"",
-                  "offset": 17
+                  "offset": 33
                 }
               ],
-              "location": "PlaceSteps.add_a_place_with(String)"
+              "location": "PlaceSteps.create_an_add_place_request_with(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.api.apiCommon.callAPI(apiCommon.java:85)\r\n\tat stepDefinitions.api.PlaceSteps.user_calls_with_http_request(PlaceSteps.java:72)\r\n\tat ✽.User calls \"AddPlaceAPI\" with \"POST\" http request(file:src/test/resources/features/API_F1_place.feature:7)\r\n",
-              "duration": 1410400,
-              "status": "failed"
+              "duration": 2715258400,
+              "status": "passed"
             },
             "line": 7,
             "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
@@ -51,6 +50,46 @@
               "location": "PlaceSteps.user_calls_with_http_request(String,String)"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5765300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2269973900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "PlaceSteps.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -59,6 +98,395 @@
           },
           {
             "name": "@APITestPost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-19T18:08:51.016Z",
+        "line": 15,
+        "name": "Verify that place is added successfully using add place post api",
+        "description": "",
+        "id": "place-validation-api-test;verify-that-place-is-added-successfully-using-add-place-post-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11485100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Create an add place request with \"Req_AddPlace_Scenario2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Req_AddPlace_Scenario2\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PlaceSteps.create_an_add_place_request_with(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229628600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44620500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "PlaceSteps.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITest"
+          },
+          {
+            "name": "@APITestPost"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-19T18:08:51.309Z",
+        "line": 31,
+        "name": "Verify that GET API is successfully getting the places",
+        "description": "",
+        "id": "place-validation-api-test;verify-that-get-api-is-successfully-getting-the-places;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8959899,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Create an add place request with \"Req_GetPlace_Scenario1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Req_GetPlace_Scenario1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PlaceSteps.create_an_add_place_request_with(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229559400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38553100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "PlaceSteps.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 457810200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Verify the \"address\" field value as \"India Get Scenario 1 QA\" when user calls the \"GetPlaceAPI\" for \"Req_GetPlace_Scenario1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"address\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"India Get Scenario 1 QA\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"Req_GetPlace_Scenario1\"",
+                  "offset": 100
+                }
+              ],
+              "location": "PlaceSteps.verify_the_field_value_as_when_user_calls_the_for(String,String,String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITest"
+          },
+          {
+            "name": "@APITestGet"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-19T18:08:52.050Z",
+        "line": 48,
+        "name": "Verify that PUT API is successfully updating the places",
+        "description": "",
+        "id": "place-validation-api-test;verify-that-put-api-is-successfully-updating-the-places;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9176100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Create an add place request with \"Req_AddPlace_Scenario1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Req_AddPlace_Scenario1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PlaceSteps.create_an_add_place_request_with(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219059599,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150199,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39251000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "PlaceSteps.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6710299,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Create an update place request with \"Req_updatePlace_Scenario1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Req_updatePlace_Scenario1\"",
+                  "offset": 36
+                }
+              ],
+              "location": "PlaceSteps.create_an_update_place_request_with(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 396242300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdatePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PlaceSteps.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16079801,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "\"msg\" in response body is \"Address successfully updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Address successfully updated\"",
+                  "offset": 26
+                }
+              ],
+              "location": "PlaceSteps.in_response_body_is(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITest"
+          },
+          {
+            "name": "@APITestPut"
           }
         ]
       }

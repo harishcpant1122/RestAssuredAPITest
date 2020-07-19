@@ -63,9 +63,8 @@ public class apiCommon extends GetLogger {
 	
 	public static String getBaseUrl()
 	{
-		
-		return p.getProperty("PlaceAPIBaseURL");
-		
+		GetLogger.logger.info("Base url is : "+p.getProperty("PlaceAPIBaseURL"));
+		return p.getProperty("PlaceAPIBaseURL");		
 	}
 	
 }

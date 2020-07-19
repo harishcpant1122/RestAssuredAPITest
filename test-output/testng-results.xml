@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5483" started-at="2020-07-18T12:50:00Z" finished-at="2020-07-18T12:50:05Z">
+  <suite name="Default suite" duration-ms="14459" started-at="2020-07-19T18:08:38Z" finished-at="2020-07-19T18:08:53Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="5483" started-at="2020-07-18T12:50:00Z" finished-at="2020-07-18T12:50:05Z">
+    <test name="Default test" duration-ms="14459" started-at="2020-07-19T18:08:38Z" finished-at="2020-07-19T18:08:53Z">
       <class name="cucumber.Options.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="setUpClass" is-config="true" duration-ms="193" started-at="2020-07-18T18:20:00Z" finished-at="2020-07-18T18:20:00Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="setUpClass" is-config="true" duration-ms="1430" started-at="2020-07-19T23:38:38Z" finished-at="2020-07-19T23:38:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="5036" started-at="2020-07-18T18:20:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-18T18:20:05Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="10732" started-at="2020-07-19T23:38:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:38:51Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="tearDownClass" is-config="true" duration-ms="159" started-at="2020-07-18T18:20:05Z" finished-at="2020-07-18T18:20:05Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="299" started-at="2020-07-19T23:38:51Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:38:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that place is added successfully using add place post api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place Validation API Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="740" started-at="2020-07-19T23:38:51Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:38:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that GET API is successfully getting the places"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place Validation API Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="690" started-at="2020-07-19T23:38:52Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:38:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that PUT API is successfully updating the places"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place Validation API Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="tearDownClass" is-config="true" duration-ms="355" started-at="2020-07-19T23:38:52Z" finished-at="2020-07-19T23:38:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="reportGeneration()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="reportGeneration" is-config="true" duration-ms="6173" started-at="2020-07-18T18:20:05Z" finished-at="2020-07-18T18:20:12Z">
+        <test-method status="PASS" signature="reportGeneration()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="reportGeneration" is-config="true" duration-ms="8614" started-at="2020-07-19T23:38:53Z" finished-at="2020-07-19T23:39:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportGeneration -->

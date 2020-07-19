@@ -1,32 +1,41 @@
-2020-07-19 23:24:48 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:24:48 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"58b0a3f9ef4f19c485b1bb40f42aaa4c","scope":"APP","reference":"2c84347c626bb93df74485a5331fb0cf2c84347c626bb93df74485a5331fb0cf","id":"2c84347c626bb93df74485a5331fb0cf"}
-2020-07-19 23:24:50 INFO  GetLogger:77 - placeId is : 58b0a3f9ef4f19c485b1bb40f42aaa4c
-2020-07-19 23:24:50 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:24:50 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"253ca3f4551dd7601f94aabed33422e1","scope":"APP","reference":"2e4976ebdcdae21a7272c4327ee3729a2e4976ebdcdae21a7272c4327ee3729a","id":"2e4976ebdcdae21a7272c4327ee3729a"}
-2020-07-19 23:24:50 INFO  GetLogger:77 - placeId is : 253ca3f4551dd7601f94aabed33422e1
-2020-07-19 23:24:50 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:24:50 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"0a063e2f4b4da260e5136cc2f1ec830b","scope":"APP","reference":"49d9cbd292b45f94a33e45c7263b8ae549d9cbd292b45f94a33e45c7263b8ae5","id":"49d9cbd292b45f94a33e45c7263b8ae5"}
-2020-07-19 23:24:50 INFO  GetLogger:77 - placeId is : 0a063e2f4b4da260e5136cc2f1ec830b
-2020-07-19 23:24:51 INFO  GetLogger:53 - httpMethod is: GET and infoUrl is: maps/api/place/get/json
-2020-07-19 23:24:51 INFO  GetLogger:54 - GetPlaceAPI API Call Response : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"India Get Scenario 1 QA","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-2020-07-19 23:24:51 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:24:51 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"476c450e62b237a2ec0c8959b0beb82f","scope":"APP","reference":"e08037173ef0792a147279fc3829206ee08037173ef0792a147279fc3829206e","id":"e08037173ef0792a147279fc3829206e"}
-2020-07-19 23:24:51 INFO  GetLogger:77 - placeId is : 476c450e62b237a2ec0c8959b0beb82f
-2020-07-19 23:24:52 INFO  GetLogger:53 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
-2020-07-19 23:24:52 INFO  GetLogger:54 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
-2020-07-19 23:25:58 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:25:58 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"5959132ae2fa58576511424c18e76bda","scope":"APP","reference":"cd471e82dc2444ba505ca81385249b0ecd471e82dc2444ba505ca81385249b0e","id":"cd471e82dc2444ba505ca81385249b0e"}
-2020-07-19 23:26:00 INFO  GetLogger:77 - placeId is : 5959132ae2fa58576511424c18e76bda
-2020-07-19 23:26:00 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:26:00 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"1f31a7c0bc2bcc6bd6715b5bd5df93f7","scope":"APP","reference":"24409481b8a76aaa7aebd1a807a10daf24409481b8a76aaa7aebd1a807a10daf","id":"24409481b8a76aaa7aebd1a807a10daf"}
-2020-07-19 23:26:00 INFO  GetLogger:77 - placeId is : 1f31a7c0bc2bcc6bd6715b5bd5df93f7
-2020-07-19 23:26:00 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:26:00 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"df4c0b0ddcb34e477c7356392b4d20ad","scope":"APP","reference":"ae13b5930c6ad1d8e8a78d1f3023fbc4ae13b5930c6ad1d8e8a78d1f3023fbc4","id":"ae13b5930c6ad1d8e8a78d1f3023fbc4"}
-2020-07-19 23:26:00 INFO  GetLogger:77 - placeId is : df4c0b0ddcb34e477c7356392b4d20ad
-2020-07-19 23:26:01 INFO  GetLogger:53 - httpMethod is: GET and infoUrl is: maps/api/place/get/json
-2020-07-19 23:26:01 INFO  GetLogger:54 - GetPlaceAPI API Call Response : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"India Get Scenario 1 QA","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
-2020-07-19 23:26:01 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
-2020-07-19 23:26:01 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"77f5ec4aa01718bdaa8225cb10b6578c","scope":"APP","reference":"60f7dd54e61a016aca251b83ac25dfc260f7dd54e61a016aca251b83ac25dfc2","id":"60f7dd54e61a016aca251b83ac25dfc2"}
-2020-07-19 23:26:01 INFO  GetLogger:77 - placeId is : 77f5ec4aa01718bdaa8225cb10b6578c
-2020-07-19 23:26:01 INFO  GetLogger:53 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
-2020-07-19 23:26:01 INFO  GetLogger:54 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
+2020-07-19 23:34:49 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:34:49 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"defc693b583c01b5d97860337c0f4bf6","scope":"APP","reference":"ae8c0d5da481ace70a460828beca8e16ae8c0d5da481ace70a460828beca8e16","id":"ae8c0d5da481ace70a460828beca8e16"}
+2020-07-19 23:34:51 INFO  GetLogger:73 - placeId is : defc693b583c01b5d97860337c0f4bf6
+2020-07-19 23:34:52 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:34:52 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"782b5c4e4b7276a74793c2c7ea4da0e1","scope":"APP","reference":"2d19d0276b5d35a73c42e346e1aa223a2d19d0276b5d35a73c42e346e1aa223a","id":"2d19d0276b5d35a73c42e346e1aa223a"}
+2020-07-19 23:34:52 INFO  GetLogger:73 - placeId is : 782b5c4e4b7276a74793c2c7ea4da0e1
+2020-07-19 23:34:52 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:34:52 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"3e8bf73ce8dcdc706c87b08c4c538c2e","scope":"APP","reference":"3f44a348380634539021af1e5d185e5b3f44a348380634539021af1e5d185e5b","id":"3f44a348380634539021af1e5d185e5b"}
+2020-07-19 23:34:52 INFO  GetLogger:73 - placeId is : 3e8bf73ce8dcdc706c87b08c4c538c2e
+2020-07-19 23:34:53 INFO  GetLogger:53 - httpMethod is: GET and infoUrl is: maps/api/place/get/json
+2020-07-19 23:34:53 INFO  GetLogger:54 - GetPlaceAPI API Call Response : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"India Get Scenario 1 QA","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+2020-07-19 23:34:53 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:34:53 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"e90760f3f16ef29b73d777e186db3c60","scope":"APP","reference":"ef1c50cb9de0bb81a11bbe5af0345409ef1c50cb9de0bb81a11bbe5af0345409","id":"ef1c50cb9de0bb81a11bbe5af0345409"}
+2020-07-19 23:34:53 INFO  GetLogger:73 - placeId is : e90760f3f16ef29b73d777e186db3c60
+2020-07-19 23:34:53 INFO  GetLogger:53 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
+2020-07-19 23:34:53 INFO  GetLogger:54 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
+2020-07-19 23:34:59 INFO  GetLogger:22 - Report Generation Started.
+2020-07-19 23:35:02 INFO  GetLogger:42 - Report Generation Done.
+2020-07-19 23:38:42 INFO  GetLogger:20 - Test Environement : QA
+2020-07-19 23:38:42 INFO  GetLogger:66 - Base url is : https://rahulshettyacademy.com
+2020-07-19 23:38:48 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:38:48 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"7347cc2307543b22dda625717937588f","scope":"APP","reference":"e6a6cdae135f73abdca096b8578eb926e6a6cdae135f73abdca096b8578eb926","id":"e6a6cdae135f73abdca096b8578eb926"}
+2020-07-19 23:38:50 INFO  GetLogger:73 - placeId is : 7347cc2307543b22dda625717937588f
+2020-07-19 23:38:51 INFO  GetLogger:66 - Base url is : https://rahulshettyacademy.com
+2020-07-19 23:38:51 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:38:51 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"dcd99ec1048dd88b02e2758b1881b49b","scope":"APP","reference":"6029c7ffb3f1d6bb2ac7f7c1c23b85676029c7ffb3f1d6bb2ac7f7c1c23b8567","id":"6029c7ffb3f1d6bb2ac7f7c1c23b8567"}
+2020-07-19 23:38:51 INFO  GetLogger:73 - placeId is : dcd99ec1048dd88b02e2758b1881b49b
+2020-07-19 23:38:51 INFO  GetLogger:66 - Base url is : https://rahulshettyacademy.com
+2020-07-19 23:38:51 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:38:51 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"b68a59e351dcd2a3bc5a759396b5af07","scope":"APP","reference":"dcc9b6f50ed0ce40c6b3a1fff391d3a1dcc9b6f50ed0ce40c6b3a1fff391d3a1","id":"dcc9b6f50ed0ce40c6b3a1fff391d3a1"}
+2020-07-19 23:38:51 INFO  GetLogger:73 - placeId is : b68a59e351dcd2a3bc5a759396b5af07
+2020-07-19 23:38:52 INFO  GetLogger:53 - httpMethod is: GET and infoUrl is: maps/api/place/get/json
+2020-07-19 23:38:52 INFO  GetLogger:54 - GetPlaceAPI API Call Response : {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"India Get Scenario 1 QA","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+2020-07-19 23:38:52 INFO  GetLogger:66 - Base url is : https://rahulshettyacademy.com
+2020-07-19 23:38:52 INFO  GetLogger:53 - httpMethod is: POST and infoUrl is: maps/api/place/add/json
+2020-07-19 23:38:52 INFO  GetLogger:54 - AddPlaceAPI API Call Response : {"status":"OK","place_id":"1f07d47b83dfd27a765eefd1e2824a8a","scope":"APP","reference":"f7d1d7412537f7fb0fe57d4526b23c2df7d1d7412537f7fb0fe57d4526b23c2d","id":"f7d1d7412537f7fb0fe57d4526b23c2d"}
+2020-07-19 23:38:52 INFO  GetLogger:73 - placeId is : 1f07d47b83dfd27a765eefd1e2824a8a
+2020-07-19 23:38:52 INFO  GetLogger:53 - httpMethod is: PUT and infoUrl is: maps/api/place/update/json
+2020-07-19 23:38:52 INFO  GetLogger:54 - UpdatePlaceAPI API Call Response : {"msg":"Address successfully updated"}
+2020-07-19 23:38:58 INFO  GetLogger:22 - Report Generation Started.
+2020-07-19 23:39:01 INFO  GetLogger:42 - Report Generation Done.
