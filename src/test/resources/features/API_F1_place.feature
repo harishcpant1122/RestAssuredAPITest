@@ -23,12 +23,12 @@ Given Create an add place request with "<addPlaceRequest>"
 When User calls "AddPlaceAPI" with "POST" http request
 Then API call got success with status code 200
 And "status" in response body is "OK"
-When Verify the "address" field value as "<ResponseName>" when user calls the "GetPlaceAPI" for "<addPlaceRequest>"
+When Verify the "name" field value as "<ResponseName>" when user calls the "GetPlaceAPI" for "<addPlaceRequest>"
 
 Examples:
 
-|addPlaceRequest  					 | responseStatusCode |ResponseName           |
-|Req_GetPlace_Scenario1     |	responseStatusCode |India Get Scenario 1 QA |
+|addPlaceRequest  					 | responseStatusCode |ResponseName            |
+|Req_GetPlace_Scenario1     |	responseStatusCode  |Frontline house         |
 
 
 # -------PUT API Test---------------------

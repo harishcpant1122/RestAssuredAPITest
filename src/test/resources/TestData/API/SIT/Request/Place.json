@@ -1,0 +1,72 @@
+{
+  "Req_AddPlace_Scenario1": {
+    "parameters": {
+      "key": "qaclick123"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "payload": {
+      "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+      },
+      "accuracy": 50,
+      "name": "Frontline house",
+      "phone_number": "(+91) 983 893 3937",
+      "address": "India post Scenario 1 SIT",
+      "types": [
+        "shoe park",
+        "shop"
+      ],
+      "website": "http://google.com",
+      "language": "French-IN"
+    }
+  },
+  "Req_AddPlace_Scenario2": {
+    "payload": {
+      "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+      },
+      "accuracy": 50,
+      "name": "Frontline house",
+      "phone_number": "(+91) 983 893 3937",
+      "address": "India Post Scenario 2 SIT",
+      "types": [
+        "shoe park",
+        "shop"
+      ],
+      "website": "http://google.com",
+      "language": "French-IN"
+    }
+  },
+  "Req_GetPlace_Scenario1": {
+    "parameters": {
+      "key": "qaclick123"
+    },
+    "payload": {
+      "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+      },
+      "accuracy": 50,
+      "name": "Frontline house",
+      "phone_number": "(+91) 983 893 3937",
+      "address": "India Get Scenario 1 SIT",
+      "types": [
+        "shoe park",
+        "shop"
+      ],
+      "website": "http://google.com",
+      "language": "French-IN"
+    }
+  },
+  "Req_updatePlace_Scenario1": {
+    "payload": {
+      "place_id": "a4eb0c8e2acf1509887cc53dcf595bda",
+      "address": "India update Scenario 1 SIT",
+      "key": "qaclick123"
+    }
+  }
+}

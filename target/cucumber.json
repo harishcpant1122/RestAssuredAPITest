@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-19T18:08:40.971Z",
+        "start_timestamp": "2020-07-19T18:17:01.018Z",
         "line": 14,
         "name": "Verify that place is added successfully using add place post api",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5028826400,
+              "duration": 2444396000,
               "status": "passed"
             },
             "line": 6,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 2715258400,
+              "duration": 1592962800,
               "status": "passed"
             },
             "line": 7,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 5765300,
+              "duration": 3253000,
               "status": "passed"
             },
             "line": 8,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2269973900,
+              "duration": 1528352100,
               "status": "passed"
             },
             "line": 9,
@@ -102,7 +102,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-19T18:08:51.016Z",
+        "start_timestamp": "2020-07-19T18:17:06.599Z",
         "line": 15,
         "name": "Verify that place is added successfully using add place post api",
         "description": "",
@@ -112,7 +112,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11485100,
+              "duration": 25540400,
               "status": "passed"
             },
             "line": 6,
@@ -130,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 229628600,
+              "duration": 224575000,
               "status": "passed"
             },
             "line": 7,
@@ -152,7 +152,7 @@
           },
           {
             "result": {
-              "duration": 128100,
+              "duration": 73400,
               "status": "passed"
             },
             "line": 8,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 44620500,
+              "duration": 39113100,
               "status": "passed"
             },
             "line": 9,
@@ -201,7 +201,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-19T18:08:51.309Z",
+        "start_timestamp": "2020-07-19T18:17:06.893Z",
         "line": 31,
         "name": "Verify that GET API is successfully getting the places",
         "description": "",
@@ -211,7 +211,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8959899,
+              "duration": 7728600,
               "status": "passed"
             },
             "line": 22,
@@ -229,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 229559400,
+              "duration": 224144000,
               "status": "passed"
             },
             "line": 23,
@@ -251,7 +251,7 @@
           },
           {
             "result": {
-              "duration": 76200,
+              "duration": 69900,
               "status": "passed"
             },
             "line": 24,
@@ -269,7 +269,7 @@
           },
           {
             "result": {
-              "duration": 38553100,
+              "duration": 33397200,
               "status": "passed"
             },
             "line": 25,
@@ -291,28 +291,28 @@
           },
           {
             "result": {
-              "duration": 457810200,
+              "duration": 414160400,
               "status": "passed"
             },
             "line": 26,
-            "name": "Verify the \"address\" field value as \"India Get Scenario 1 QA\" when user calls the \"GetPlaceAPI\" for \"Req_GetPlace_Scenario1\"",
+            "name": "Verify the \"name\" field value as \"Frontline house\" when user calls the \"GetPlaceAPI\" for \"Req_GetPlace_Scenario1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"address\"",
+                  "val": "\"name\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"India Get Scenario 1 QA\"",
-                  "offset": 36
+                  "val": "\"Frontline house\"",
+                  "offset": 33
                 },
                 {
                   "val": "\"GetPlaceAPI\"",
-                  "offset": 82
+                  "offset": 71
                 },
                 {
                   "val": "\"Req_GetPlace_Scenario1\"",
-                  "offset": 100
+                  "offset": 89
                 }
               ],
               "location": "PlaceSteps.verify_the_field_value_as_when_user_calls_the_for(String,String,String,String)"
@@ -330,7 +330,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-19T18:08:52.050Z",
+        "start_timestamp": "2020-07-19T18:17:07.578Z",
         "line": 48,
         "name": "Verify that PUT API is successfully updating the places",
         "description": "",
@@ -340,7 +340,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9176100,
+              "duration": 5192500,
               "status": "passed"
             },
             "line": 37,
@@ -358,7 +358,7 @@
           },
           {
             "result": {
-              "duration": 219059599,
+              "duration": 209199600,
               "status": "passed"
             },
             "line": 38,
@@ -380,7 +380,7 @@
           },
           {
             "result": {
-              "duration": 150199,
+              "duration": 75300,
               "status": "passed"
             },
             "line": 39,
@@ -398,7 +398,7 @@
           },
           {
             "result": {
-              "duration": 39251000,
+              "duration": 31546600,
               "status": "passed"
             },
             "line": 40,
@@ -420,7 +420,7 @@
           },
           {
             "result": {
-              "duration": 6710299,
+              "duration": 2724100,
               "status": "passed"
             },
             "line": 41,
@@ -438,7 +438,7 @@
           },
           {
             "result": {
-              "duration": 396242300,
+              "duration": 351898600,
               "status": "passed"
             },
             "line": 42,
@@ -460,7 +460,7 @@
           },
           {
             "result": {
-              "duration": 16079801,
+              "duration": 13673701,
               "status": "passed"
             },
             "line": 43,

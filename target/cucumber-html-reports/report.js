@@ -194,7 +194,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "Verify the \"address\" field value as \"\u003cResponseName\u003e\" when user calls the \"GetPlaceAPI\" for \"\u003caddPlaceRequest\u003e\"",
+  "name": "Verify the \"name\" field value as \"\u003cResponseName\u003e\" when user calls the \"GetPlaceAPI\" for \"\u003caddPlaceRequest\u003e\"",
   "keyword": "When "
 });
 formatter.examples({
@@ -213,7 +213,7 @@ formatter.examples({
       "cells": [
         "Req_GetPlace_Scenario1",
         "responseStatusCode",
-        "India Get Scenario 1 QA"
+        "Frontline house"
       ]
     }
   ]
@@ -272,7 +272,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify the \"address\" field value as \"India Get Scenario 1 QA\" when user calls the \"GetPlaceAPI\" for \"Req_GetPlace_Scenario1\"",
+  "name": "Verify the \"name\" field value as \"Frontline house\" when user calls the \"GetPlaceAPI\" for \"Req_GetPlace_Scenario1\"",
   "keyword": "When "
 });
 formatter.match({
