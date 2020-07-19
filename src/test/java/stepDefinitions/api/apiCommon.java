@@ -30,20 +30,42 @@ public class apiCommon extends GetLogger {
 	
 	public RequestSpecification requestSpecification(String apiName) throws FileNotFoundException,SecurityException
 	{
-		if (reqSpec==null)
-		{
-			Map<String,String> map=new HashMap<String,String>();
-			map.put("key", "qaclick123");
+		String postPayload="{\r\n" + 
+				"  \"location\": {\r\n" + 
+				"    \"lat\": -38.383494,\r\n" + 
+				"    \"lng\": 33.427362\r\n" + 
+				"  },\r\n" + 
+				"  \"accuracy\": 50,\r\n" + 
+				"  \"name\": \"Frontline house\",\r\n" + 
+				"  \"phone_number\": \"(+91) 983 893 3937\",\r\n" + 
+				"  \"address\": \"29, side layout, cohen 09\",\r\n" + 
+				"  \"types\": [\r\n" + 
+				"    \"shoe park\",\r\n" + 
+				"    \"shop\"\r\n" + 
+				"  ],\r\n" + 
+				"  \"website\": \"http://google.com\",\r\n" + 
+				"  \"language\": \"French-IN\"\r\n" + 
+				"}";
+		
+		reqSpec=(RequestSpecification) new RequestSpecBuilder()
+				.setBaseUri(p.getProperty(apiName))
+				.setBody(postPayload);
 			
-			PrintStream log=new PrintStream(new FileOutputStream("logging.txt"));
-			reqSpec=(RequestSpecification) new RequestSpecBuilder().setBaseUri(p.getProperty(apiName))
-			//.addQueryParam("key","qaclick123")
-			//.addQueryParams(map)
-			.addFilter(RequestLoggingFilter.logRequestTo(log))
-			.addFilter(ResponseLoggingFilter.logResponseTo(log))
-			.setContentType(ContentType.JSON)
-			.build();
-		}
+				
+				
+//		if (reqSpec==null)
+//		{
+//			
+//			
+//			PrintStream log=new PrintStream(new FileOutputStream("logging.txt"));
+//			reqSpec=(RequestSpecification) new RequestSpecBuilder().setBaseUri(p.getProperty(apiName))
+//			//.addQueryParam("key","qaclick123")
+//			//.addQueryParams(map)
+//			.addFilter(RequestLoggingFilter.logRequestTo(log))
+//			.addFilter(ResponseLoggingFilter.logResponseTo(log))
+//			.setContentType(ContentType.JSON)
+//			.build();
+//		}
 		GetLogger.logger.info("Request Specification generated for : "+p.getProperty(apiName));
 		return reqSpec;
 	}

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-18T12:50:00.923Z",
+        "start_timestamp": "2020-07-19T14:32:44.816Z",
         "line": 14,
         "name": "Verify that place is added successfully using add place post api",
         "description": "",
@@ -13,34 +13,27 @@
         "steps": [
           {
             "result": {
-              "duration": 2115675000,
+              "duration": 4256072200,
               "status": "passed"
             },
             "line": 6,
-            "name": "Add a place payload with \"Scenario1_AddPlace_name\" \"Scenario1_AddPlace_language\" and \"Scenario1_AddPlace_address\"",
+            "name": "Add a place with \"Req_AddPlace_Scenario1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Scenario1_AddPlace_name\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"Scenario1_AddPlace_language\"",
-                  "offset": 51
-                },
-                {
-                  "val": "\"Scenario1_AddPlace_address\"",
-                  "offset": 85
+                  "val": "\"Req_AddPlace_Scenario1\"",
+                  "offset": 17
                 }
               ],
-              "location": "PlaceSteps.add_a_place_payload_with_and(String,String,String)"
+              "location": "PlaceSteps.add_a_place_with(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1575248200,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.api.apiCommon.callAPI(apiCommon.java:85)\r\n\tat stepDefinitions.api.PlaceSteps.user_calls_with_http_request(PlaceSteps.java:72)\r\n\tat ✽.User calls \"AddPlaceAPI\" with \"POST\" http request(file:src/test/resources/features/API_F1_place.feature:7)\r\n",
+              "duration": 1410400,
+              "status": "failed"
             },
             "line": 7,
             "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
@@ -58,46 +51,6 @@
               "location": "PlaceSteps.user_calls_with_http_request(String,String)"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2593500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "API call got success with status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 38
-                }
-              ],
-              "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1062443000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "\"status\" in response body is \"OK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"OK\"",
-                  "offset": 29
-                }
-              ],
-              "location": "PlaceSteps.in_response_body_is(String,String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [

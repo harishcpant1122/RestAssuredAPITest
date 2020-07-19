@@ -1,9 +1,9 @@
+core\api\GetAPITestDataJson.class
 core\api\GetAPIConf.class
 core\api\GetProperties.class
 core\common\GenerateTestReport.class
 core\ui\DriverManager.class
 core\ui\webdriverCore.class
-core\api\GetAPITestData.class
 core\common\GetLogger.class
 core\common\GetEnvDetails.class
 core\common\Hooks.class

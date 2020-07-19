@@ -1,13 +1,10 @@
 stepDefinitions\api\PlaceSteps.class
+api\pojo\place\GetPlaceBuilder.class
+pageobjects\ui\secureareaPage.class
+pageobjects\ui\loginPage.class
 pageobjects\ui\welcomePage.class
-api\pojo\place\AddPlace_location.class
-api\pojo\place\UpdatePlace.class
 api\pojo\place\AddPlaceBuilder.class
 stepDefinitions\api\apiCommon.class
 stepDefinitions\ui\uiStepDef.class
-api\pojo\place\GetPlaceBuilder.class
-pageobjects\ui\secureareaPage.class
-api\pojo\place\AddPlace.class
-pageobjects\ui\loginPage.class
 cucumber\Options\TestRunner.class
 api\pojo\place\UpdatePlaceBuilder.class

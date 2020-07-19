@@ -18,20 +18,12 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "name": "Add a place payload with \"\u003cname\u003e\" \"\u003clanguage\u003e\" and \"\u003caddress\u003e\"",
+  "name": "Add a place with \"\u003crequest\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
   "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
   "keyword": "When "
-});
-formatter.step({
-  "name": "API call got success with status code 200",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "\"status\" in response body is \"OK\"",
-  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -40,16 +32,14 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "name",
-        "language",
-        "address"
+        "request",
+        "responseStatusCode"
       ]
     },
     {
       "cells": [
-        "Scenario1_AddPlace_name",
-        "Scenario1_AddPlace_language",
-        "Scenario1_AddPlace_address"
+        "Req_AddPlace_Scenario1",
+        "200"
       ]
     }
   ]
@@ -68,11 +58,11 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Add a place payload with \"Scenario1_AddPlace_name\" \"Scenario1_AddPlace_language\" and \"Scenario1_AddPlace_address\"",
+  "name": "Add a place with \"Req_AddPlace_Scenario1\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "PlaceSteps.add_a_place_payload_with_and(String,String,String)"
+  "location": "PlaceSteps.add_a_place_with(String)"
 });
 formatter.result({
   "status": "passed"
@@ -85,26 +75,7 @@ formatter.match({
   "location": "PlaceSteps.user_calls_with_http_request(String,String)"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "API call got success with status code 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "PlaceSteps.api_call_got_success_with_status_code(Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "\"status\" in response body is \"OK\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PlaceSteps.in_response_body_is(String,String)"
-});
-formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.api.apiCommon.callAPI(apiCommon.java:85)\r\n\tat stepDefinitions.api.PlaceSteps.user_calls_with_http_request(PlaceSteps.java:72)\r\n\tat ✽.User calls \"AddPlaceAPI\" with \"POST\" http request(file:src/test/resources/features/API_F1_place.feature:7)\r\n",
+  "status": "failed"
 });
 });
