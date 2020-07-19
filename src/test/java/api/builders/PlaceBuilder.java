@@ -1,35 +1,35 @@
-package api.pojo.place;
+package api.builders;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import org.json.simple.JSONObject;
+
 import core.api.GetAPITestDataJson;
 
-public class AddPlaceBuilder extends GetAPITestDataJson
+public class PlaceBuilder extends GetAPITestDataJson
 {
 	JSONObject testData;
+	JSONObject testDataParams;
 	JSONObject testDataPayload;
-	public Map getPlaceParams()
+	public JSONObject getParams(String scenario)
 	{
-		Map<String,String> map=new HashMap<String,String>();
-		map.put("key", "qaclick123");
-		return map;
-		
+		testData=GetAPITestDataJson.getAPITestData("Place", scenario);
+		testDataParams=(JSONObject) testData.get("parameters");
+		return testDataParams;		
 	}
 	
-	public Map getPlaceHeaders()
+	public Map getHeaders()
 	{
 		Map<String,String> map=new HashMap<String,String>();
 		map.put("key", "qaclick123");
 		return map;		
 	}
 
-	public JSONObject getPlacePayload(String scenario)
+	public JSONObject getPayload(String scenario)
 	{
 		testData=GetAPITestDataJson.getAPITestData("Place", scenario);
 		testDataPayload=(JSONObject) testData.get("payload");
 		return testDataPayload;
 	}
 }
-
-

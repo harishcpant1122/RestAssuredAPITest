@@ -1,5 +1,0 @@
-PlaceAPIBaseURL = https://rahulshettyacademy.com
-AddPlaceAPI=maps/api/place/add/json
-UpdatePlaceAPI=maps/api/place/update/json
-GetPlaceAPI=maps/api/place/get/json
-

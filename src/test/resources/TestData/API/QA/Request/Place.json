@@ -1,6 +1,6 @@
 {
   "Req_AddPlace_Scenario1": {
-    "params": {
+    "parameters": {
       "key": "qaclick123"
     },
     "headers": {
@@ -42,7 +42,7 @@
     }
   },
   "Req_GetPlace_Scenario1": {
-    "params": {
+    "parameters": {
       "key": "qaclick123"
     },
     "payload": {
@@ -60,6 +60,13 @@
       ],
       "website": "http://google.com",
       "language": "French-IN"
+    }
+  },
+  "Req_updatePlace_Scenario1": {
+    "payload": {
+      "place_id": "a4eb0c8e2acf1509887cc53dcf595bda",
+      "address": "India update Scenario 1 QA",
+      "key": "qaclick123"
     }
   }
 }

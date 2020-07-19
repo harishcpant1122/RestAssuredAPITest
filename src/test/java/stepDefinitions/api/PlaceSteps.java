@@ -2,14 +2,8 @@ package stepDefinitions.api;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
-
-import java.io.FileNotFoundException;
-
 import org.json.simple.JSONObject;
-
-import api.pojo.place.AddPlaceBuilder;
-import api.pojo.place.GetPlaceBuilder;
-import api.pojo.place.UpdatePlaceBuilder;
+import api.builders.PlaceBuilder;
 import core.common.GetLogger;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -24,59 +18,46 @@ public class PlaceSteps extends apiCommon
 		Response apiResponse;
 		String placeId=null;
 		
-		AddPlaceBuilder addPlaceBuilder=new AddPlaceBuilder(); 
-		UpdatePlaceBuilder updatePlaceBuilder=new UpdatePlaceBuilder(); 
-		GetPlaceBuilder getPlaceBuilder=new GetPlaceBuilder(); 
+		
+		PlaceBuilder placebuilder=new PlaceBuilder();
 		JSONObject testDataParams;
 		JSONObject testDataHeaders;
 		JSONObject testDataPayload;
-	
+		String baseUrl=apiCommon.getBaseUrl();
 		//------------------Post API Calls -------------------
-		@Given("Add a place with {string}")
-		public void add_a_place_with(String scenario) throws FileNotFoundException, SecurityException {
-			testDataPayload=addPlaceBuilder.getPlacePayload(scenario);
-			System.out.println("**************--->"+testDataPayload.get("phone_number"));
+		
+		@Given("Create an add place request with {string}")
+		public void create_an_add_place_request_with(String scenario) {
+			testDataPayload=placebuilder.getPayload(scenario);
 			request=given()
-					.baseUri("https://rahulshettyacademy.com")
+					.baseUri(baseUrl)
 					.body(testDataPayload);
 		}
-	
+
 		// ------------------Get API calls -------------------
 		
 		@When("Verify the {string} field value as {string} when user calls the {string} for {string}")
 		public void verify_the_field_value_as_when_user_calls_the_for(String key, String value, String infoUrl, String scenario) {
-			testDataParams= getPlaceBuilder.getPlaceParams(scenario);
+			testDataParams= placebuilder.getParams(scenario);
 			request=given()
-					.baseUri("https://rahulshettyacademy.com")
+					.baseUri(baseUrl)
 					.params(testDataParams)
 					.queryParam("place_id", placeId);					
 			user_calls_with_http_request(infoUrl,"GET");	
-			System.out.println("Get response-->"+apiResponse.asString());
-			assertEqualsCustom(value,getJasonPath(apiResponse,key));
-			
+			assertEqualsCustom(value,getJasonPath(apiResponse,key));			
 		}
 		
-//		@When("Verify the {string} field value as {string} when user calls the {string}")
-//		public void verify_the_field_value_as_when_user_calls_the(String field,String key, String infoUrl) throws FileNotFoundException, SecurityException {
-//			testDataParams=addPlaceBuilder.getPlacePayload(scenario);
-//			request=given()
-//					.baseUri("https://rahulshettyacademy.com")
-//					.params(testDataParams);
-//			user_calls_with_http_request(infoUrl,"GET");
-//			request=given().spec(requestSpecification("PlaceAPIBaseURL"))
-//					.queryParam("place_id", placeId);
-//					user_calls_with_http_request(infoUrl,"GET");
-//					assertEqualsCustom(getPlaceBuilder.GetData(key),getJasonPath(apiResponse,field));
-			//assertEqualsCustom(getPlaceBuilder.GetData(key),getJasonPath(apiResponse,field));
-//		}
-		
 		// ------------------Update API calls -------------------
-//		@When("Update a place payload with {string} and {string}")
-//		public void update_a_place_payload_with_and(String updatedAddress, String key) throws FileNotFoundException, SecurityException {
-//			request=given()
-//			.spec(requestSpecification("PlaceAPIBaseURL"))
-//			.body(updatePlaceBuilder.UpdatePlacePayload(placeId,updatedAddress, key));
-//		}
+		
+		@When("Create an update place request with {string}")
+		public void create_an_update_place_request_with(String scenario) {
+			testDataPayload=placebuilder.getPayload(scenario);			
+			testDataPayload.replace("place_id", "a4eb0c8e2acf1509887cc53dcf595bda", placeId);
+			System.out.println("**************--->"+testDataPayload.get("place_id"));
+			request=given()
+					.baseUri(baseUrl)
+					.body(testDataPayload);
+		}
 		
 		//------------------Common--------------------------
 		
