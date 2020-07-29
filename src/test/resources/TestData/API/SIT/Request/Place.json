@@ -24,6 +24,10 @@
     }
   },
   "Req_AddPlace_Scenario2": {
+    "parameters": {},
+    "headers": {
+      "Content-Type": "application/json"
+    },
     "payload": {
       "location": {
         "lat": -38.383494,
@@ -44,6 +48,9 @@
   "Req_GetPlace_Scenario1": {
     "parameters": {
       "key": "qaclick123"
+    },
+    "headers": {
+      "Content-Type": "application/json"
     },
     "payload": {
       "location": {

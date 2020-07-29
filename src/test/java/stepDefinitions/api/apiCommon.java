@@ -8,10 +8,9 @@ import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-
 import org.apache.logging.log4j.Logger;
 
-import core.api.GetAPIConf;
+import core.common.ConfigurationManager;
 import core.common.GetLogger;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -21,9 +20,10 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class apiCommon extends GetLogger {
+public class APICommon extends GetLogger {
 	static RequestSpecification reqSpec;
-	static Properties p=GetAPIConf.getAPIConfig();
+	//static Properties p=GetAPIConf.getAPIConfig();
+	static Properties p=ConfigurationManager.getConfig();
 	
 	Response apiResponse;
 	
@@ -61,10 +61,10 @@ public class apiCommon extends GetLogger {
 		assertEquals(expected,actual,"Expected is: "+expected+", But Actual is: "+actual+"  /");		
 	}
 	
-	public static String getBaseUrl()
+	public static String getBaseUrl(String apiName)
 	{
-		GetLogger.logger.info("Base url is : "+p.getProperty("PlaceAPIBaseURL"));
-		return p.getProperty("PlaceAPIBaseURL");		
+		GetLogger.logger.info("Base url is : "+p.getProperty(apiName));
+		return p.getProperty(apiName);		
 	}
 	
 }

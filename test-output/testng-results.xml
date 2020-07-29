@@ -1,88 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8066" started-at="2020-07-19T18:17:00Z" finished-at="2020-07-19T18:17:08Z">
+  <suite name="Default suite" duration-ms="6656" started-at="2020-07-29T06:05:37Z" finished-at="2020-07-29T06:05:43Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@6293abcc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="8066" started-at="2020-07-19T18:17:00Z" finished-at="2020-07-19T18:17:08Z">
+    <test name="Default test" duration-ms="6656" started-at="2020-07-29T06:05:37Z" finished-at="2020-07-29T06:05:43Z">
       <class name="cucumber.Options.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="setUpClass" is-config="true" duration-ms="196" started-at="2020-07-19T23:47:00Z" finished-at="2020-07-19T23:47:00Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@6293abcc]" name="setUpClass" is-config="true" duration-ms="155" started-at="2020-07-29T11:35:37Z" finished-at="2020-07-29T11:35:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="5961" started-at="2020-07-19T23:47:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:47:06Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@6293abcc]" name="runScenario" duration-ms="6339" started-at="2020-07-29T11:35:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-29T11:35:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify that place is added successfully using add place post api"]]>
+                <![CDATA["Verify the column count between source and target file"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Place Validation API Test"]]>
+                <![CDATA["S3 upload Test"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="296" started-at="2020-07-19T23:47:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:47:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that place is added successfully using add place post api"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Place Validation API Test"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="682" started-at="2020-07-19T23:47:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:47:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that GET API is successfully getting the places"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Place Validation API Test"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="runScenario" duration-ms="618" started-at="2020-07-19T23:47:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-19T23:47:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that PUT API is successfully updating the places"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Place Validation API Test"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="tearDownClass" is-config="true" duration-ms="199" started-at="2020-07-19T23:47:08Z" finished-at="2020-07-19T23:47:08Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@6293abcc]" name="tearDownClass" is-config="true" duration-ms="83" started-at="2020-07-29T11:35:43Z" finished-at="2020-07-29T11:35:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="reportGeneration()[pri:0, instance:cucumber.Options.TestRunner@2cbb3d47]" name="reportGeneration" is-config="true" duration-ms="6736" started-at="2020-07-19T23:47:08Z" finished-at="2020-07-19T23:47:15Z">
+        <test-method status="PASS" signature="reportGeneration()[pri:0, instance:cucumber.Options.TestRunner@6293abcc]" name="reportGeneration" is-config="true" duration-ms="8003" started-at="2020-07-29T11:35:43Z" finished-at="2020-07-29T11:35:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportGeneration -->

@@ -24,6 +24,9 @@
     }
   },
   "Req_AddPlace_Scenario2": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
     "payload": {
       "location": {
         "lat": -38.383494,
@@ -42,6 +45,9 @@
     }
   },
   "Req_GetPlace_Scenario1": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
     "parameters": {
       "key": "qaclick123"
     },
@@ -63,6 +69,9 @@
     }
   },
   "Req_updatePlace_Scenario1": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
     "payload": {
       "place_id": "a4eb0c8e2acf1509887cc53dcf595bda",
       "address": "India update Scenario 1 QA",

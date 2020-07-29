@@ -1,0 +1,14 @@
+{
+  "Req_AddBook_Scenario1": {
+    "parameters": {},
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "payload": {
+      "name": "Learn Appium Automation with Java",
+      "isbn": "aaa",
+      "aisle": "111",
+      "author": "John foe"
+    }
+  }
+}

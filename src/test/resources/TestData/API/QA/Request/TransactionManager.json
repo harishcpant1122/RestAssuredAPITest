@@ -1,0 +1,16 @@
+{
+  "Req_AddTransaction_Success": {
+    "parameters": {},
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "payload": {
+    "firstName": "nand",
+    "lastName": "Kishor QA",
+    "email": "skemail",
+    "mobileNumber": 993456789,
+    "accountNumber": 1234567891234567,
+    "dateOfBirth": "1997-05-25"
+	}
+  }
+}

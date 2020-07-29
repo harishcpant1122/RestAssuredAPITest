@@ -16,8 +16,6 @@ public class webdriverCore {
 	
 	public static WebDriver getDriver()
 	{
-		System.out.println("Browser from property file-->"+p.getProperty("browser"));
-		
 		switch (p.getProperty("browser")) {
 		  case "chrome":			  	
 			  	System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");

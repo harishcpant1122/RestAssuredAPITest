@@ -1,10 +1,11 @@
+api\builders\APIBuilder.class
 stepDefinitions\api\PlaceSteps.class
-api\pojo\place\GetPlaceBuilder.class
+stepDefinitions\api\BookSteps.class
+pageobjects\ui\welcomePage.class
+stepDefinitions\api\CommonSteps.class
+stepDefinitions\ui\uiStepDef.class
 pageobjects\ui\secureareaPage.class
 pageobjects\ui\loginPage.class
-pageobjects\ui\welcomePage.class
-api\pojo\place\AddPlaceBuilder.class
-stepDefinitions\api\apiCommon.class
-stepDefinitions\ui\uiStepDef.class
+stepDefinitions\api\TransactionManagerSteps.class
+stepDefinitions\api\APICommon.class
 cucumber\Options\TestRunner.class
-api\pojo\place\UpdatePlaceBuilder.class

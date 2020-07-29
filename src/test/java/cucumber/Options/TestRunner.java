@@ -4,15 +4,16 @@ package cucumber.Options;
 import org.testng.annotations.AfterSuite;
 
 import core.common.GenerateTestReport;
-import io.cucumber.java.After;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features="src\\test\\resources\\features",
 		glue= {"stepDefinitions"},
-		//tags={"@UITestPostive"},
-		tags={"@APITest"},
+		//tags={"@PlaceAPI"},
+		//tags={"@BookAPI"},
+		//tags={"@TMAPI"},
+		tags={"@S3Upload"},
 		plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber.json" }		
 		)
 public class TestRunner extends AbstractTestNGCucumberTests 
